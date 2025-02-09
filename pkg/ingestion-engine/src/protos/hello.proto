@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package hello;
+
+// Define a simple gRPC service
+service HelloService {
+  rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+// Request message
+message HelloRequest {
+  string name = 1;
+}
+
+// Response message
+message HelloReply {
+  string message = 1;
+}

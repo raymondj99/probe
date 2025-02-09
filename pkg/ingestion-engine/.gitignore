@@ -1,0 +1,7 @@
+node_modules/
+share/
+deps/
+include/
+lib/
+bin/
+build/

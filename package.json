@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "devDependencies": {
+    "prettier": "^3.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --ignore-path .gitignore --write .",
+    "format:check": "prettier --ignore-path .gitignore --check ."
+  },
+  "workspaces": [
+    "probe-client",
+    "pkg/*"
+  ],
+  "prettier": {
+    "proseWrap": "always",
+    "importOrder": [
+      "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+  }
+}

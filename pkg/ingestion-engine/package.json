@@ -1,0 +1,20 @@
+{
+  "name": "ingestion-engine",
+  "version": "1.0.0",
+  "description": "the ingestion engine for probe",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "./scripts/build_grpc.sh",
+    "install": "./scripts/generate_protos.sh && node-gyp configure"
+  },
+  "author": "",
+  "license": "ISC",
+  "gypfile": true,
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^8.3.0"
+  },
+  "devDependencies": {
+    "node-gyp": "^11.0.0"
+  }
+}
